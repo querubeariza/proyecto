@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox y Grid</title>
+</head>
+<body>
+    <style>
+       /*1. */
+       .contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        width: 800px;
+        
+       }
+       .rojo{
+        color: red;
+       }
+       .fondo{
+        background-color: blue;
+        color: white;
+       }
+       /*2*/
+       .principal{
+        display: flex;
+        flex-direction: row;
+        width: 800px;
+       }
+       div{
+        width: 100px;
+       }
+       .clase{
+        
+        background-color: greenyellow;
+       }
+       .atributo{
+        background-color: yellow;
+       }
+       .metodo{
+        background-color: blue;
+       }
+       .uno{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        border: 2px solid black;
+       }
+       .dos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 2px solid black;
+       }
+       
+       .tres{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        border: 2px solid black;
+       }
+      /*Practica 3*/
+      .practica3{
+        display: grid;
+            grid-template-columns: repeat(3, 100px); 
+            grid-template-rows: repeat(3, 100px); 
+            
+      }
+      .caja{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightgray;
+            border: 1px solid black;
+            font-size: 24px;
+      }
+
+      /*PRACTICA 4*/
+    </style>
+                                                <!-----1------>
+    <div class="contenedor">
+      <p class="rojo">Arbol</p>
+      <p class="fondo blanco">bola</p>
+      <p class="rojo">Santa</p>
+      <p class="fondo blanco">mama</p>
+    </div>
+                                            <!----2------>
+   <div class="pincipal">
+
+        <div class="uno">
+            <div class="clase">clase</div>
+            <div class="atributo">atributo</div>
+            <div class="metodo">metodo</div>
+        </div>
+
+        <div class="dos">
+            <div class="clase">clase</div>
+            <div class="atributo">atributo</div>
+            <div class="metodo">metodo</div>
+        </div>
+
+        <div class="tres">
+            <div class="clase">clase</div>
+            <div class="atributo">atributo</div>
+            <div class="metodo">metodo</div>
+        </div>
+    </div>
+
+    <!--PRACTICA 3-->
+    <div class="practica3">
+        <div class="caja">1</div>
+        <div class="caja">2</div>
+        <div class="caja">3</div>
+        <div class="caja">4</div>
+        <div class="caja">5</div>
+        <div class="caja">6</div>
+        <div class="caja">7</div>      
+        <div class="caja">8</div>      
+        <div class="caja">9</div>
+    </div>
+
+    <!--PRACTICA 4-->
+    <div class="contenedor"></div>
+        <div class="rojo">A</div>
+        <div class="rojo">B</div>
+        <div class="rojo">C</div>
+        <div class="rojo">D</div>
+        <div class="fondo">1</div>
+        <div class="fondo">2</div>
+        <div class="rojo">E</div>
+        <div class="rojo">F</div>
+        <div class="rojo">G</div>
+        <div class="rojo">H</div>
+</body>
+</html>
